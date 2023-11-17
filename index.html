@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emlowz.com</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container mt-3" style="max-width: 600px;">
+        <div class="d-flex flex-column min-vh-100">
+            <header class="text-center">
+                <img class="rounded mb-1" src="avatar.png" width="95" />
+                <h1 class="m-0"><span class="blurred">emlowz</span></h1>
+                <p class="lead"><span class="badge bg-primary xtext-dark">I make film and TV edits, mostly Star Trek
+                        🖖</span></p>
+            </header>
+
+            <main class="flex-grow-1" style="margin-bottom: 100em">
+                <div class="row gx-4 gy-4">
+                    <div class="col-md-3 col-6 text-center">
+                        <a class="youtube icon w-100" href="https://www.youtube.com/@emlowz">
+                            <i class="fa-brands fa-youtube fa-5x"></i>
+                            <label>YouTube</label>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a class="instagram icon w-100 text-center" href="https://www.instagram.com/emlowz_">
+                            <i class="fa-brands fa-instagram fa-5x"></i>
+                            <label>Instagram</label>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a class="tiktok icon w-100 text-center" href="https://www.tiktok.com/@emlowz">
+                            <i class="fa-brands fa-tiktok fa-5x"></i>
+                            <label>TikTok</label>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a class="contact icon w-100 text-center" data-bs-toggle="modal" data-bs-target="#contact-modal"
+                            style="cursor: pointer">
+                            <i class="fa-solid fa-envelope fa-5x"></i>
+                            <label>Contact</label>
+                        </a>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="mt-auto text-center">
+                <img id="tng" src="tng.png" class="img-fluid" />
+            </footer>
+
+            <div id="contact-modal" class="modal text-dark" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Contact</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+                                <input type="hidden" name="accessKey" value="77e2cc87-cdd2-4fab-ac15-3cf2fe8ff565">
+                                <input type="hidden" name="redirectTo" value="https://emlowz.com/contacted">
+                                <input type="text" name="honeypot" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="contact-name">Name</label>
+                                    <input type="text" class="form-control" id="contact-name" name="name" autofocus>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-email">Email Address</label>
+                                    <input type="email" class="form-control" id="contact-email" name="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-message">Message</label>
+                                    <textarea name="message" class="form-control"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-lg btn-danger">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+            integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
